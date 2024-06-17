@@ -16,6 +16,14 @@ let scienceButton = document.querySelector(".science-button");
 
 englishButton.addEventListener("click", function() {
     let englishInput = document.querySelector(".english").value;
+if (englishInput === "Mon"){
+    document.querySelector(".english-message").innerHTML = "Correct!";
+} else{
+    document.querySelector(".english-message").innerHTML = "Wrong! Try again.";
+}
+
+
+
 
     // 2. Write an if-else conditional statement.
     //  - Check if the value of the variable englishInput is correct.
@@ -35,7 +43,11 @@ mathButton.addEventListener("click", function() {
     // NOTE: we treat numbers slightly different than strings.
     //  - We need to write 'Number' before the grabbed value. 
     let mathInput = Number(document.querySelector(".math").value);
-
+    if (mathInput === 30){
+        document.querySelector(".math-message").innerHTML = "Yessss!";
+    } else{
+        document.querySelector(".math-message").innerHTML = "Wrong! Try again.";
+    }
     // 3. Write an if-else conditional statement.
     //  - Check if the value of the variable mathInput is correct.
     //  - The answer should be 30.
@@ -48,7 +60,11 @@ mathButton.addEventListener("click", function() {
 
 ssButton.addEventListener("click", function() {
     let ssInput = document.querySelector(".social-studies").value;
-
+    if (ssInput === "Albany"){
+        document.querySelector(".ss-message").innerHTML = "You got it!!";
+    } else{
+        document.querySelector(".ss-message").innerHTML = "Womp, womp. Try again..";
+    }
     // 4. Write an if-else conditional statement.
     //  - Check if the value of the variable ssInput is correct.
     //  - The answer should be "Albany".
@@ -63,6 +79,12 @@ ssButton.addEventListener("click", function() {
 scienceButton.addEventListener("click", function() {
     // 5. Declare a variable that stores the value of the user input in the science section.
     //  - Look at previous lines of code to help you out.
+    let scienceInput = document.querySelector(".science").value;
+    if (scienceInput === "solid"){
+        document.querySelector(".science-message").innerHTML = "Rockstar!";
+    } else{
+        document.querySelector(".science-message").innerHTML = "Sad.";
+    }
 
 
     // 6. Write an if-else conditional statement.
